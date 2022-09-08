@@ -1,0 +1,206 @@
+@use "../custom" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.desktop-header {
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.nav__desktop {
+  position: fixed;
+  inset: 20px 0px 20px 20px;
+  width: 75px;
+  background-color: $white;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1030;
+  box-shadow: 0 0.2rem 1rem rgba($black, 0.4);
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+  }
+}
+
+.open {
+  width: 240px;
+}
+
+.menuToggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid rgba($black, 0.25);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 23px;
+}
+
+.menuToggle::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: $black;
+  transform: translateY(-8px);
+  transition: all 0.4s;
+}
+
+.open .menuToggle::before {
+  transform: translateY(0px) rotate(45deg);
+}
+
+.menuToggle::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: $black;
+  transform: translateY(8px);
+  transition: all 0.4s;
+  -webkit-box-shadow: 0 -8px 0 $black;
+  box-shadow: 0 -8px 0 $black;
+}
+
+.open .menuToggle::after {
+  transform: translateY(0px) rotate(-45deg);
+  box-shadow: 0 0 0 $black;
+}
+
+.desktop-list {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  padding: 0 10px;
+  transition: all 0.4s;
+}
+
+a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  text-decoration: none;
+}
+
+.text {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  padding: 0 15px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  color: $black;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+}
+
+.open .text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.icon {
+  position: relative;
+  display: block;
+  min-width: 55px;
+  height: 55px;
+  line-height: 60px;
+  transition: all 0.4s;
+  border-radius: 10px;
+  font-size: 1.75em;
+  color: $black;
+}
+
+.icon::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--clr);
+  filter: blur(8px);
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.active {
+  transform: translateX(30px);
+}
+
+.open .active {
+  transform: translateX(10px);
+}
+
+.active .icon {
+  background: var(--clr);
+  color: $white;
+}
+
+.active .text {
+  color: var(--clr);
+}
+
+.active .icon::before {
+  opacity: 0.5;
+}
+
+.mobile-header {
+  @media only screen and (min-width: 769px) {
+    display: none;
+  }
+}
+
+.navbar {
+  background-image: $grey;
+  padding: 0;
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: 2rem;
+}
+
+.brand {
+  width: fit-content;
+}
+
+.button-container {
+  align-self: center;
+}
+
+.navbar-toggler {
+  border: 2px solid;
+  color: rgba($white, 0.15) !important;
+}

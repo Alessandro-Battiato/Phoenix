@@ -1,0 +1,130 @@
+@use "../custom" as *;
+
+.title {
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: $phoenix;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  @media only screen and (max-width: 991px) {
+    font-size: 3rem;
+  }
+}
+
+.cta__container-description {
+  font-size: 2.35rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: $white;
+  margin-bottom: 7rem;
+  @media only screen and (max-width: 991px) {
+    font-size: 1.6rem;
+  }
+}
+
+.brand-title {
+  font-size: 2rem;
+  padding: 0.8rem;
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: $phoenix;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.nav-link {
+  text-align: end;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+
+.name {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: $white;
+  @media only screen and (max-width: 576px) {
+    font-size: 0.9rem;
+  }
+}
+
+.news-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.25rem;
+  color: $white;
+  -webkit-user-select: none;
+  user-select: none;
+  text-transform: uppercase;
+}
+
+.caption {
+  margin: 0.5rem 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: $black;
+}
+
+.company-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: $phoenix;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.footer__list {
+  list-style: none;
+  padding-left: 0rem;
+  text-align: center;
+}
+
+.footer__link {
+  display: inline-block;
+  position: relative;
+
+  &:link,
+  &:visited {
+    color: $black;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+  }
+}
+
+.footer__link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.footer__link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.footer__copyright {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  padding-top: 2rem;
+  text-align: center;
+}

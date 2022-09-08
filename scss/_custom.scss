@@ -1,0 +1,18 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// Colors
+$black: rgba(0, 0, 0, 0.9);
+$white: rgba(255, 255, 255, 1);
+$red: rgba(245, 51, 0, 1);
+$yellow: rgba(255, 220, 50, 1);
+$blue: rgba(64, 41, 255, 1);
+$phoenix: linear-gradient(
+  to right bottom,
+  rgba(131, 58, 180, 1) 0%,
+  rgba(253, 29, 29, 1) 50%,
+  rgba(252, 176, 69, 1) 100%
+);
+$grey: linear-gradient(
+  114deg,
+  rgba(0, 0, 0, 1) 40%,
+  rgba(188, 188, 190, 1) 100%
+);

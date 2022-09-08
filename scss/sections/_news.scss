@@ -1,0 +1,41 @@
+@use "../custom" as *;
+
+.news-section {
+  padding: 5rem 0rem;
+  background-color: rgba($black, 0.85);
+  border-bottom: 8px solid rgba(0, 0, 0, 0.9);
+}
+
+.news__title-box {
+  text-align: center;
+}
+
+.news-container {
+  display: grid;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 5rem;
+  padding-bottom: 1rem;
+  @media only screen and (min-width: 1441px) {
+    grid-template-columns: auto auto auto;
+  }
+  @media only screen and (max-width: 1440px) {
+    grid-template-rows: auto auto auto;
+  }
+}
+
+.news-box {
+  background-color: rgba($white, 0.7);
+  text-align: center;
+  transition: all 0.4s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.news-img {
+  height: 15rem;
+  width: 25rem;
+  object-fit: cover;
+}

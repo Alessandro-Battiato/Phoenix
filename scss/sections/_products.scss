@@ -1,0 +1,137 @@
+@use "../custom" as *;
+
+.products-section {
+  padding: 8rem 8rem;
+  background-color: rgba($black, 0.1);
+  border-bottom: 8px solid rgba($black, 0.9);
+}
+
+.desktop-products {
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+  width: 100%;
+}
+
+.row {
+  @media only screen and (max-width: 1439px) {
+    justify-content: space-between;
+  }
+}
+
+.product-container {
+  @media only screen and(min-width: 1440px) {
+    width: 33.33333333%;
+  }
+  width: 44.44444444%;
+}
+
+.details {
+  background-color: rgba($black, 0.1);
+  transition: all 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}
+
+.description {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.img-container {
+  max-width: 100%;
+  @media only screen and(min-width: 1440px) {
+    height: 15rem;
+  }
+  height: 8.5rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.img {
+  height: 100%;
+}
+
+.mobile-products {
+  @media only screen and (min-width: 769px) {
+    display: none;
+  }
+  @media only screen and (max-width: 576px) {
+    height: 25vh;
+  }
+  height: 40vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.item {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  background-color: rgba($black, 0.1);
+  text-align: center;
+  height: 100%;
+}
+
+.mobile-img {
+  width: 15rem;
+  @media only screen and (max-width: 576px) {
+    width: 6rem;
+  }
+}
+
+.headset {
+  margin-top: 2rem;
+}
+
+.motherboard {
+  margin-top: 2rem;
+}
+
+.mouse {
+  @media only screen and (min-width: 577px) {
+    width: 18rem;
+  }
+  @media only screen and (max-width: 576px) {
+    width: 8rem;
+  }
+  margin-top: 2rem;
+}
+
+.keyboard {
+  @media only screen and (min-width: 577px) {
+    width: 18rem;
+  }
+  @media only screen and (max-width: 576px) {
+    width: 7rem;
+  }
+  margin-top: 3rem;
+}
+
+.gpu {
+  @media only screen and (min-width: 577px) {
+    width: 18rem;
+  }
+  @media only screen and (max-width: 576px) {
+    width: 8rem;
+  }
+  margin-top: 2rem;
+}
+
+.monitor {
+  @media only screen and (min-width: 577px) {
+    width: 18rem;
+  }
+  @media only screen and (max-width: 576px) {
+    width: 7rem;
+  }
+  margin-top: 2.5rem;
+}
+
+.item:not(:last-child) {
+  border-bottom: 2px solid $white;
+}

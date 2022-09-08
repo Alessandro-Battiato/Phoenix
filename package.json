@@ -1,0 +1,22 @@
+{
+  "name": "phoenix",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Alessandro Salvatore Battiato",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.53.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "bootstrap": "^5.1.3",
+    "postcss-cli": "^10.0.0"
+  }
+}

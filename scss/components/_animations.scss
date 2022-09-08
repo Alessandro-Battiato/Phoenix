@@ -1,0 +1,7 @@
+@use "../custom" as *;
+
+@keyframes hueRotation {
+  to {
+    filter: hue-rotate(360deg);
+  }
+}

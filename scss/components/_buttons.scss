@@ -1,0 +1,22 @@
+@use "../custom" as *;
+
+.button {
+  justify-content: center;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  background: $phoenix;
+  border: none;
+  border-radius: 0.1rem;
+  box-shadow: 0 0 0 $black;
+  font-family: "Poppins", sans-serif;
+  color: $white;
+  font-size: 2rem;
+  transition: all 500ms;
+
+  &:hover {
+    border: 2px solid $phoenix;
+    animation: hueRotation 2s linear infinite;
+    color: $white;
+  }
+}

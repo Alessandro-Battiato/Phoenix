@@ -1,0 +1,40 @@
+@use "../custom" as *;
+
+.footer {
+  background-color: rgba($black, 0.2);
+  padding: 5rem 0;
+  font-size: 1.7rem;
+  color: $black;
+
+  &__logo-box {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__logo {
+    background-image: url(../../images/phoenix.png);
+    background-repeat: no-repeat;
+    background-size: 20rem;
+    background-position-x: 50%;
+    height: 20rem;
+  }
+
+  &__details-box {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+}
+
+.footer__list-container {
+  border-top: 1px solid $black;
+  padding-top: 1.5rem;
+  display: block;
+}
+
+.footer__item {
+  display: inline-block;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 1.5rem;
+}

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phoenix</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Ramabhadra&family=Lilita+One&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/phoenix.png" />
+  </head>
+  <body>
+    <header class="desktop-header">
+      <div class="nav__desktop">
+        <div class="menuToggle"></div>
+        <ul class="nav__desktop-list">
+          <li class="desktop-list active" style="--clr: rgba(245, 51, 0, 1)">
+            <a href="#hero-section">
+              <span class="icon"
+                ><ion-icon name="home-outline"></ion-icon
+              ></span>
+              <span class="text">Home</span>
+            </a>
+          </li>
+          <li class="desktop-list" style="--clr: rgba(255, 220, 50, 1)">
+            <a href="#products-section">
+              <span class="icon"
+                ><ion-icon name="cart-outline"></ion-icon
+              ></span>
+              <span class="text">Products</span>
+            </a>
+          </li>
+          <li class="desktop-list" style="--clr: rgba(64, 41, 255, 1)">
+            <a href="#news-section">
+              <span class="icon"
+                ><ion-icon name="newspaper-outline"></ion-icon
+              ></span>
+              <span class="text">News</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+  <header class="mobile-header">
+    <nav class="navbar fixed-top navbar-light shadow">
+      <div class="nav-container">
+        <a class="brand" href="#">
+          <h1 class="brand-title">Phoenix</h1>
+        </a>
+        <span class="button-container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        </span>
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="mobile-list">
+                <a class="nav-link" aria-current="page" href="#hero-section">Home</a>
+              </li>
+              <li class="mobile-list">
+                <a class="nav-link" href="#products-section">Products</a>
+              </li>
+              <li class="mobile-list">
+                <a class="nav-link" href="#news-section" tabindex="-1" aria-disabled="true"
+                  >News</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+ </header>
+    <main>
+      <section class="hero-section" id="hero-section">
+        <div class="container">
+          <div class="heading">
+            <div class="title__container">
+              <h1 class="title">Phoenix</h1>
+            </div>
+          </div>
+          <div class="cta">
+            <div class="cta__container">
+              <p class="cta__container-description">
+                We deliver top-quality products built<br />
+                by experienced professionists<br />
+                to enhance your gameplays
+              </p>
+              <a href="#" class="button">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="products-section" id="products-section">
+      <div class="desktop-products">
+        <div class="row">   
+          <div class="product-container">
+            <div class="details">
+              <div class="description">
+                <span class="product-name">
+                  <h3 class="name">
+                    Headsets
+                  </h3>
+                </span>
+              </div>
+              <div class="img-container">
+                <img src="images/product-1.png" class="img" alt="headset">
+              </div>
+            </div>
+          </div>
+          <div class="product-container">
+            <div class="details">
+              <div class="description">
+                <span class="product-name">
+                  <h3 class="name">
+                    Motherboards
+                  </h3>
+                </span>
+              </div>
+              <div class="img-container">
+                <img src="images/product-2.png" class="img" alt="motherboard">
+              </div>
+            </div>
+          </div>
+          <div class="product-container">
+            <div class="details">
+              <div class="description">
+                <span class="product-name">
+                  <h3 class="name">
+                    RGB Keyboards
+                  </h3>
+                </span>
+              </div>
+              <div class="img-container">
+                <img src="images/product-3.png" class="img" alt="keyboard">
+              </div>
+            </div>
+          </div>
+          <div class="product-container">
+            <div class="details">
+              <div class="description">
+                <span class="product-name">
+                  <h3 class="name">
+                    GPU
+                  </h3>
+                </span>
+              </div>
+              <div class="img-container">
+                <img src="images/product-4.png" class="img" alt="graphic card">
+              </div>
+            </div>
+          </div>
+          <div class="product-container">
+            <div class="details">
+              <div class="description">
+                <span class="product-name">
+                  <h3 class="name">
+                    RGB Mouse
+                  </h3>
+                </span>
+              </div>
+              <div class="img-container">
+                <img src="images/product-5.jpg" class="img" alt="gaming mouse">
+              </div>
+            </div>
+          </div>
+          <div class="product-container">
+            <div class="details">
+              <div class="description">
+                <span class="product-name">
+                  <h3 class="name">
+                    Wide Monitors
+                  </h3>
+                </span>
+              </div>
+              <div class="img-container">
+                <img src="images/product-6.png" class="img" alt="gaming monitor">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="mobile-products">
+          <div class="item">
+            <span class="product-name"> 
+              <h3 class="name">  
+                Headsets
+              </h3>
+            </span>
+            <img src="images/product-1.png" class="mobile-img headset">
+          </div>
+          <div class="item">
+            <span class="product-name">
+              <h3 class="name">
+                Motherboards
+              </h3>
+            </span>
+            <img src="images/product-2.png" class="mobile-img motherboard">
+          </div>
+          <div class="item">
+            <span class="product-name">
+              <h3 class="name">
+                RGB Mouse
+              </h3>
+            </span>
+            <img src="images/product-5.jpg" class="mobile-img mouse">
+          </div>
+          <div class="item">
+            <span class="product-name">
+              <h3 class="name">
+                GPU
+              </h3>
+            </span>
+            <img src="images/product-4.png" class="mobile-img gpu">
+          </div>
+          <div class="item">
+            <span class="product-name">
+              <h3 class="name">
+                RGB Keyboards
+              </h3>
+            </span>
+            <img src="images/product-3.png" class="mobile-img keyboard">
+          </div>
+          <div class="item">
+            <span class="product-name">
+              <h3 class="name">
+                Wide Monitors
+              </h3>
+            </span>
+            <img src="images/product-6.png" class="mobile-img monitor">
+          </div>
+        </div>
+      </section>
+      <section class="news-section" id="news-section">
+        <span class="news__title-box">
+          <h3 class="news-title">
+            Latest News
+          </h3>
+        </span>
+        <div class="news-container">
+          <div class="news-box">
+              <img src="images/news-1.jpg" class="news-img">
+          <span>
+              <p class="caption">
+                Gaming tech giveaway
+              </p>
+          </span>
+          </div>
+          <div class="news-box">
+              <img src="images/news-2.png" class="news-img">
+            <span>
+              <p class="caption">
+                Our best gaming setups
+              </p>
+            </span>
+          </div>
+          <div class="news-box">
+              <img src="images/news-3.jpg" class="news-img">
+            <span>
+              <p class="caption">
+                Upcoming software updates
+              </p>
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <div class="footer__logo"></div>
+        <span class="company-name">Phoenix</span>
+      </div>
+      <div class="footer__details-box">
+        <div class="row-1-of-2">
+          <div class="footer__list-container">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  Shipping
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  Info
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  Terms
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row-2-of-2">
+          <p class="footer__copyright">
+            Built by <a class="footer__link" href="#">Alessandro Battiato</a>
+            for his Portfolio. <br>
+            Copyright © by Alessandro Battiato
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+     <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+      integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
